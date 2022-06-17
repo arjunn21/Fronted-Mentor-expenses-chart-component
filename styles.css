@@ -1,0 +1,107 @@
+* {
+    box-sizing: border-box;
+}
+body {
+    min-height: 100vh;
+    background-color: hsl(27, 66%, 92%);
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: "DM Sans", sans-serif;
+}
+.container {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 0.25rem 1rem;
+}
+@media screen and (max-width: 600px) {
+    .container{
+        width: 100%;
+    }
+}
+.bal {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 10px;
+    padding: 15px 5px;
+}
+.bal p {
+    margin: 0;
+}
+.balance {
+    background-color: hsl(10, 79%, 65%);
+    border-radius: 12px;
+    padding: 10px 25px;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.flex {
+    display: flex;
+}
+
+.circles div {
+    position: relative;
+    width: 50px;
+    height: 50px;
+    border-radius: 100%;
+    display: inline-block;
+}
+.circle2 {
+    background-color: hsl(25, 47%, 15%);
+    z-index: 1;
+}
+.circle1 {
+    z-index: 2;
+    left: 25px;
+    border: 2px solid white;
+}
+.chart {
+    margin-top: 20px;
+    border-radius: 12px;
+    padding: 7px 25px;
+    flex-direction: column;
+    background-color: hsl(33, 100%, 98%);
+}
+hr {
+    width: 96%;
+    height: 2px;
+    outline: none;
+    border: none;
+    background-color: hsl(27, 66%, 92%);
+}
+.summary {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+.total p {
+    font-size: 12px;
+    margin-bottom: 0;
+    color: hsl(28, 10%, 53%);
+    font-weight: 400;
+}
+.total h1 {
+    margin-top: 5px;
+    font-weight: 700;
+    color: hsl(25, 47%, 15%);
+}
+.trend {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    align-self: center;
+    gap: 1px;
+}
+.trend p {
+    margin: 0;
+}

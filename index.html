@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <!-- displays site properly based on user's device -->
+
+        <link
+            rel="icon"
+            type="image/png"
+            sizes="32x32"
+            href="./images/favicon-32x32.png"
+        />
+        <link rel="stylesheet" href="styles.css" />
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=DM+Sans&display=swap"
+            rel="stylesheet"
+        />
+        <script
+            src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/3.8.0/chart.min.js"
+            integrity="sha512-sW/w8s4RWTdFFSduOTGtk4isV1+190E/GghVffMA9XczdJ2MDzSzLEubKAs5h0wzgSJOQTRYyaz73L3d6RtJSg=="
+            crossorigin="anonymous"
+            referrerpolicy="no-referrer"
+        ></script>
+        <script type="module" src="index.js"></script>
+        <title>Frontend Mentor | Expenses chart component</title>
+
+        <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+        <style>
+            .attribution {
+                margin-top: 20px;
+                font-size: 11px;
+                text-align: center;
+            }
+            .attribution a {
+                color: hsl(228, 45%, 44%);
+            }
+        </style>
+    </head>
+    <body>
+        <div class="container">
+            <div class="flex balance">
+                <div class="bal">
+                    <p style="color: hsl(27, 66%, 92%); font-size: 14px; margin-bottom: 0;">
+                        My balance
+                    </p>
+                    <p
+                        style="
+                            margin-top: 0;
+                            font-size: 24px;
+                            color: hsl(33, 100%, 98%);
+                            font-weight: 700;
+                        "
+                    >
+                        $921.48
+                    </p>
+                </div>
+                <div class="circles">
+                    <div class="circle1"></div>
+                    <div class="circle2"></div>
+                </div>
+            </div>
+            <div class="flex chart">
+                <h1 style="color: hsl(25, 47%, 15%)">Spending - Last 7 days</h1>
+                <canvas id="chart" width="400" height="200"></canvas>
+                <hr />
+                <div class="summary">
+                    <div class="total">
+                        <p>Total this month</p>
+                        <h1>$478.33</h1>
+                    </div>
+                    <div class="trend">
+                        <p style="font-weight: bold">+2.4%</p>
+                        <p style="color: hsl(28, 10%, 53%)">from last month</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="attribution">
+            Challenge by
+            <a
+                href="https://www.frontendmentor.io?ref=challenge"
+                target="_blank"
+                >Frontend Mentor</a
+            >. Coded by
+            <a
+                href="https://www.frontendmentor.io/profile/arjunn21"
+                target="_blank"
+                >Satya Patra</a
+            >.
+        </div>
+    </body>
+</html>
